@@ -5,6 +5,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -24,6 +25,7 @@ public class Person {
     private Date birth;
     private Map<String, Object> maps;
     private List<Object> lists;
+    private String[] pets;
     private Dog dog;
 
     @Override
@@ -35,6 +37,7 @@ public class Person {
                 ", birth=" + birth +
                 ", maps=" + maps +
                 ", lists=" + lists +
+                ", pets=" + Arrays.toString(pets) +
                 ", dog=" + dog +
                 '}';
     }
