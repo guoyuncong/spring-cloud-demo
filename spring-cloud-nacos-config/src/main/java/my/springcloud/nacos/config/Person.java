@@ -26,24 +26,9 @@ public class Person {
     private Date birth;
     private Map<String, Object> maps;
     private Map<String, Dog> dogMaps;
+    // private Object[] lists;
     private List<Object> lists;
-    private String[] pets;
-    private Dog[] dogs;
+    // private Dog[] dogs;
+    private List<Dog> dogs;
     private Dog dog;
-
-    @Override
-    public String toString() {
-        return "Person{" +
-                "lastName='" + lastName + '\'' +
-                ", age=" + age +
-                ", boss=" + boss +
-                ", birth=" + birth +
-                ", maps=" + maps +
-                ", dogMaps=" + dogMaps +
-                ", lists=" + lists +
-                ", pets=" + Arrays.toString(pets) +
-                ", dogs=" + Arrays.toString(dogs) +
-                ", dog=" + dog +
-                '}';
-    }
 }
