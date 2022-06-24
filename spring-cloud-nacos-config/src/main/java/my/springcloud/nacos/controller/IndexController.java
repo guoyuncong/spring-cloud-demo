@@ -1,8 +1,8 @@
 package my.springcloud.nacos.controller;
 
-import my.springcloud.nacos.config.Person;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -11,14 +11,17 @@ import org.springframework.web.bind.annotation.RestController;
  * @description:
  */
 @RestController
+@RequestMapping("/config")
+@RefreshScope
 public class IndexController {
 
-    @Autowired
-    private Person person;
+    @Value("${heng}")
+    private String heng;
 
-    @GetMapping("/")
-    public String index() {
-        System.out.println(person.toString());
-        return person.toString();
+    @RequestMapping("/get")
+    public String get() {
+        return heng;
     }
+
+
 }
