@@ -12,10 +12,10 @@ import my.springcloud.common.enums.ResultCode;
 public final class ResultDTO<T> {
     private final String code;
     private final String message;
-    private final T detail;
+    private final T data;
 
-    public static <T> ResultDTO<T> ofSuccess(T detail) {
-        return of(ResultCode.SUCCESS, detail);
+    public static <T> ResultDTO<T> ofSuccess(T data) {
+        return of(ResultCode.SUCCESS, data);
     }
 
     public static <T> ResultDTO<T> ofSuccess() {
