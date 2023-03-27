@@ -28,6 +28,7 @@
         <spring-cloud-nacos.version>2.2.7.RELEASE</spring-cloud-nacos.version>
         <lombok.version>1.18.8</lombok.version>
         <hutool.version>5.8.1</hutool.version>
+        <fastjson.version>2.0.26</fastjson.version>
     </properties>
 
     <dependencies>
@@ -44,6 +45,13 @@
             <artifactId>hutool-all</artifactId>
             <version>${hutool.version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+
 
     </dependencies>
 

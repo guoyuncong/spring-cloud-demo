@@ -1,4 +1,4 @@
-package my.springcloud.common.enums;
+package com.springcloud.common.base.model;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;

@@ -1,7 +1,7 @@
 package com.springcloud.feign.consumer.provider.controller;
 
+import com.springcloud.common.enums.ResultDTO;
 import com.springcloud.feign.consumer.provider.service.GoodService;
-import my.springcloud.common.model.ResultDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

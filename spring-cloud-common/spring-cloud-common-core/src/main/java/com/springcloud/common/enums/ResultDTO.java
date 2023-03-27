@@ -1,10 +1,10 @@
-package my.springcloud.common.model;
+package com.springcloud.common.enums;
 
+import com.springcloud.common.base.model.ResultCode;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.ToString;
-import my.springcloud.common.enums.ResultCode;
 
 @Getter
 @ToString
@@ -31,6 +31,6 @@ public final class ResultDTO<T> {
     }
 
     public boolean isSuccess() {
-        return ResultCode.SUCCESS.name().equals(code);
+        return ResultCode.SUCCESS.getCode().equals(code);
     }
 }
